@@ -1,0 +1,148 @@
+\documentclass[french]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabu}
+\usepackage{hyperref}
+\usepackage[explicit,compact]{titlesec}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\titleformat{\section}
+	{\normalfont\large\bfseries}
+	{}
+	{0pt}
+	{#1}
+	[{\titlerule[1pt]}]
+
+\hypersetup{
+	colorlinks,
+	allcolors=.,
+	urlcolor=blue,
+}
+
+\newcommand{\separation}{\multicolumn{1}{c}{} \\}
+\pagestyle{empty}
+
+\begin{document}
+
+	\begin{center}
+		{\Huge --- Félix Chabot ---}
+	\end{center}
+
+	\section{Renseignements personnels}
+	\begin{tabu} to \textwidth {rX}
+		Courriel: & \href{mailto:fchabot1337@gmail.com}{fchabot1337@gmail.com} \\
+		Téléphone: & (579) 488-1254 \\
+		Langues: & français et anglais \\
+	\end{tabu}
+	\section{Expériences de travail}
+	\begin{tabu} to \textwidth {r|X}
+		Aujourd'hui & {
+			{\large \bfseries Enseignant}
+
+			\textbf{Cégep de Granby}
+
+			{\footnotesize Granby, QC}
+
+			Préparation de cours, poste annuel, travailler avec des jeunes.
+		} \\
+
+		\separation{}
+		Été 2019 & {
+			{\large \bfseries Développeur junior}
+
+			\textbf{Diffusion Solution Intégrées}
+
+			{\footnotesize Granby, QC}
+
+			Membre d'une équipe attitrée au plus gros client. Communication (en anglais) directement avec celui-ci.
+		} \\
+
+		\separation{}
+		Automne 2017 & {\large \bfseries Développeur stagiaire} \\
+		Été 2018 & {
+			\textbf{Diffusion Solution Intégrées}
+
+			{\footnotesize Granby, QC}
+
+			Méthodologie Agile, programmation <<full-stack>>.
+		} \\
+
+		\separation{}
+		Hiver 2017 & {
+			{\large \bfseries Développeur stagiaire}
+
+			\textbf{CYME International Inc.}
+
+			{\footnotesize St-Bruno-de-Montarville, QC}
+
+			Recherche et développement avec des technologies du web.
+		} \\
+
+		\separation{}
+		Hiver 2016 & {
+			{\large \bfseries Développeur stagiaire}
+
+			\textbf{Plastiques Berry Canada Inc.}
+
+			{\footnotesize Waterloo, QC}
+
+			Développement de A à Z d'une application intranet en \textit{MVC.net}
+		} \\
+	\end{tabu}
+
+	\section{Éducation}
+	\begin{tabu} to \textwidth {r|X}
+		2019 & {
+			{\large \bfseries Baccalauréat en informatique}
+
+			Université de Sherbrooke
+		} \\
+		\separation{}
+		2016 & {
+			{\large \bfseries Techniques de l'informatique}
+
+			Cégep de Granby
+		} \\
+	\end{tabu}
+
+	\section{Compétences}
+
+	\textbf{Compétences générales} \\
+	La communication, le travail en équipe, la vulgarisation, bonne gestion du stress, l'apprentissage, la patience.
+
+	\textbf{Langages} \\
+	{\ttfamily bash, C, C\#, C++, CSS, HTML, Haskell, Java, JavaScript (ES6), \\ Objective-C, Python, Rust}
+
+	\textbf{Outils} \\
+	{\ttfamily AWS, Confluence, Hibernate, IntelliJ, Jira,} \LaTeX{\ttfamily , PyCharm, React, \\ SVN, Spring, Visual Studio, Visual Studio Code, git, node.js, vim}
+
+	\textbf{Base de données} \\
+	{\ttfamily MySQL, SQLite, SQL Server}
+
+	\section{Projets}
+	{\large \bfseries \href{https://vecpad.netlify.com/}{Vecpad}:}
+	{\large un visualiseur d'algèbre linéaire en 3D}
+
+	Réalisé avec \href{https://reactjs.org/}{React} et \href{https://threejs.org/}{three.js}, ce projet a pour but d'aider les élèves des cours des sciences de l'image à mieux se familiariser avec les différents concepts de l'algèbre linéaire à l'aide de visualisations.
+
+	\bigskip
+	{\large \bfseries \href{https://github.com/daniel-junior-dube/comfywm}{Comfy}:}
+	{\large un gestionnaire de fenêtres par pavage}
+
+	En collaboration avec mon collègue \textit{Daniel-Junior Dubé}, nous avons créé cette composante système à l'aide du langage de programmation \href{https://www.rust-lang.org/}{Rust}. Celle-ci est compilée et fonctionne entièrement sous un environnement \texttt{GNU/Linux} à l'aide du nouveau protocole \href{https://wayland.freedesktop.org/}{Wayland}.
+
+	\bigskip
+	{\large \bfseries \href{https://github.com/Chabam/digital-audio-boombox}{Digital-Audio-Boombox}:}
+	{\large un lecteur de fichier audio terminal}
+
+	Ce petit projet est une preuve de concept pour démontrer un système à temps réel. L'application communique directement dans un flux audio système à l'aide de la librairie \href{http://www.portaudio.com/}{PortAudio}. Elle est écrite en \texttt{C++17}.
+
+	\section{Intérêts}
+	\begin{itemize}
+		\item J'adore la musique, j'ai récemment commencé la guitare.
+		\item J'essaie de rester en forme à l'aide de l'escalade et l'entraînement physique.
+		\item Je me tiens à jour en lisant des livres techniques. J'adore les livres \textit{O'Reilly}!
+		\item Comme tout le monde, parfois je m'écrase devant une bonne série en fin de journée!
+	\end{itemize}
+\end{document}

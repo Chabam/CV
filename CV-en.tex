@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tabu}
+\usepackage{hyperref}
+\usepackage[explicit,compact]{titlesec}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\titleformat{\section}
+	{\normalfont\large\bfseries}
+	{}
+	{0pt}
+	{#1}
+	[{\titlerule[1pt]}]
+
+\hypersetup{
+	colorlinks,
+	allcolors=.,
+	urlcolor=blue,
+}
+
+\newcommand{\separation}{\multicolumn{1}{c}{} \\}
+\pagestyle{empty}
+
+\begin{document}
+
+	\begin{center}
+		{\Huge --- Félix Chabot ---}
+	\end{center}
+
+	\section{Personal information}
+	\begin{tabu} to \textwidth {rX}
+		Email: & \href{mailto:fchabot1337@gmail.com}{fchabot1337@gmail.com} \\
+		Phone: & (579) 488-1254 \\
+		Languages: & French and English \\
+		\texttt{git} repository: & \url{https://github.com/Chabam}
+	\end{tabu}
+	\section{Working experiences}
+	\begin{tabu} to \textwidth {r|X}
+		\separation{}
+		Winter 2020 & {\large \bfseries Junior developer} \\
+		Summer 2019 & {
+
+			\textbf{Diffusion Solution Intégrées}
+
+			{\footnotesize Granby, QC}
+
+			Member of a team assigned to the biggest client. All communications were done in English with the client itself.
+		} \\
+
+		\separation{}
+
+		Fall 2019 & {
+			{\large \bfseries Teacher}
+
+			\textbf{Cégep de Granby}
+
+			{\footnotesize Granby, QC}
+
+			Course building, annual position, working with young adults.
+		} \\
+
+
+		\separation{}
+		Fall 2017 & {\large \bfseries Intern developer} \\
+		Summer 2018 & {
+			\textbf{Diffusion Solution Intégrées}
+
+			{\footnotesize Granby, QC}
+
+			Agile methodology, "full-stack" programming.
+		} \\
+
+		\separation{}
+		Winter 2017 & {
+			{\large \bfseries Intern developer}
+
+			\textbf{CYME International Inc.}
+
+			{\footnotesize St-Bruno-de-Montarville, QC}
+
+			Research and development with web technologies.
+		} \\
+
+		\separation{}
+		Hiver 2016 & {
+			{\large \bfseries Intern developer}
+
+			\textbf{Plastiques Berry Canada Inc.}
+
+			{\footnotesize Waterloo, QC}
+
+			Development from A to Z of an intranet web application in \textit{MVC.net}.
+		} \\
+	\end{tabu}
+
+	\section{Education}
+	\begin{tabu} to \textwidth {r|X}
+		2019 & {
+			{\large \bfseries Bachelor of Science in Computer Science}
+
+			Université de Sherbrooke
+		} \\
+
+		\separation{}
+		2016 & {
+			{\large \bfseries Computer Science Technology Diploma}
+
+			Cégep de Granby
+		} \\
+	\end{tabu}
+
+	\section{Skills}
+
+	\textbf{General skills} \\
+	Communication, teamwork, vulgarization, stress management, learning, patience.
+
+	\textbf{Programming languages} \\
+	{\ttfamily bash, C, C\#, C++, CSS, HTML, Haskell, Java, JavaScript (ES6), \\ Objective-C, Python, Rust}
+
+	\textbf{Tools} \\
+	{\ttfamily AWS, Confluence, Hibernate, IntelliJ, Jira,} \LaTeX{\ttfamily , PyCharm, React, \\ SVN, Spring, Visual Studio, Visual Studio Code, git, node.js, vim}
+
+	\textbf{Databases} \\
+	{\ttfamily MySQL, SQLite, SQL Server}
+
+	\section{Projects}
+	{\large \bfseries \href{https://vecpad.netlify.com/}{Vecpad}:}
+	{\large a linear algebra visualizer in 3D}
+
+	Realized with \href{https://reactjs.org/}{React} and \href{https://threejs.org/}{three.js}, this project is intended to help the students in imaging courses to get familiar with the different concepts of linear algebra using visualizations.
+
+	\bigskip
+	{\large \bfseries \href{https://github.com/daniel-junior-dube/comfywm}{Comfy}:}
+	{\large a tiling window manager}
+
+	In collaboration with my colleague \textit{Daniel-Junior Dubé}, we created this system component using the programming language \href{https://www.rust-lang.org/}{Rust}. It is compiled and works entirely inside a \texttt{GNU/Linux} environment with the help of the new protocol \href{https://wayland.freedesktop.org/}{Wayland}.
+
+	\bigskip
+	{\large \bfseries \href{https://github.com/Chabam/digital-audio-boombox}{Digital-Audio-Boombox}:}
+	{\large a terminal audio player}
+
+	This small project is a proof of concept to demonstrate real time systems. This application communicates directly with a system's audio stream using the library \href{http://www.portaudio.com/}{PortAudio}. It is written in \texttt{C++} (with some \texttt{C++17} here and there).
+
+	\section{Interests}
+	\begin{itemize}
+		\item Music is one of my greatest passions, I recently started learning guitar.
+		\item I do a lot of bouldering and sometime some physical conditioning.
+		\item To stay up to date I read technical books. I especially like \textit{O'Reilly}!
+		\item Like everybody, at the end of the day I enjoy crashing down on my sofa while watching a good series!
+	\end{itemize}
+\end{document}
